@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">
+      <a href="#home" class="logo">
+        <span class="logo-bracket"><</span>Portfolio<span class="logo-bracket">/></span>
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#admin" class="nav-link" id="admin-link" style="display:none">Admin</a></li>
+      <li><a href="#login" class="nav-link" id="login-nav-link">Login</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+  </nav>
+
+  <main id="app">
+    <!-- Views rendered here by JS -->
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Portfolio. Built with Node.js & Express.</p>
+  </footer>
+
+  <script src="/js/api.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/admin.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>
+
